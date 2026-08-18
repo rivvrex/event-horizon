@@ -1,0 +1,13 @@
+# Base theme for the dashboard. The CSS in `ui/app.py` refines the chrome, but
+# Streamlit's own widget internals (BaseWeb inputs, popovers, dataframe canvas)
+# read their colours from here — setting only CSS leaves light-mode popovers.
+[theme]
+base = "dark"
+primaryColor = "#10B981"            # muted emerald: focus rings, slider thumbs
+backgroundColor = "#0A0A0C"         # deep charcoal page
+secondaryBackgroundColor = "#0E1117" # lifted surface: sidebar, charts, tables
+textColor = "#F3F4F6"               # crisp light gray
+font = "sans serif"
+
+[server]
+runOnSave = true
